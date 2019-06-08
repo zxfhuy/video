@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv=pragma content=no-cache>
+<title>CCTV-1高清</title>
+
+</head>
+
+<body>
+<div id="a1"></div>
+
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		f:'ckplayer/m3u8.swf',
+		a:'http://cctvtxyh5c.liveplay.myqcloud.com/wstv/btv1_2_hd.m3u8',
+                p:1,
+		c:0,
+	        s:4,
+	        lv:1
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};
+	var video=['http://'];
+	CKobject.embed('ckplayer/ckplayer.swf','a1','ckplayer_a1','816','584',false,flashvars,video,params);
+	function closelights(){//关灯
+		alert(' 本演示不支持开关灯');
+	}
+	function openlights(){//开灯
+		alert(' 本演示不支持开关灯');
+	}
+  </script>
+</body>
+</html>
